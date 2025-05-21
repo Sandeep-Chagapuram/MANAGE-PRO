@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="flex flex-col items-center">
+    <div class="main_heading">TASK MANAGER</div>
+
+    <!-- taking inputs -->
+    <section id="newtask" class="ml-3 max-w-[1200px] sm:w-[95vw]  relative">
+        <h1 class="text-5xl mt-5 mb-5 font-thin ">Add a new task</h1>
+        <div class="w-[100%]">
+            <div class="sm:flex gap-4">
+                <input type="text" placeholder="Enter title of the task" id="inp_title" class="input_title ">
+                <input type="date" id="inp_date" class="input_date">
+            </div>
+            <input type="text" placeholder="Enter Description of the task" id="inp_desc" class="input_desc">
+        </div>
+        <div id="add" class="addbtn">Add task</div>
+    </section>
+
+    <section id="currenttasks" class="ml-3 mt-8 max-w-[1200px] w-[100vw] sm:w-[95vw]  relative ">
+        <div class="flex items-center gap-16">
+            <h1 class="text-5xl m-5 font-thin">Your current tasks</h1>
+            <div id="show"
+                class="w-24 h-10 bg-slate-300 rounded-full text-lg flex justify-center items-center hover:cursor-pointer show">
+                Show</div>
+            <div class="close1 bg-slate-200 h-8 w-14 flex justify-center items-center rounded-lg hover:cursor-pointer">close</div>
+        </div>
+        <div id="tasklist">
+            <!--  -->
+            
+        </div>
+    </section>
+    <section id="completed_tasks" class="ml-3 max-w-[1200px] sm:w-[95vw]  relative">
+        <div class="flex items-center gap-16 ">
+            <h1 class="text-5xl m-5 font-thin">Completed tasks</h1>
+            <div id="show"
+                class="w-24 h-10 bg-slate-300 rounded-full text-lg flex justify-center items-center hover:cursor-pointer show">
+                Show</div>
+            <div class="close1 bg-slate-200 h-8 w-14 flex justify-center items-center rounded-lg hover:cursor-pointer">close</div>
+        </div>
+        <div id="comp_tasklist">
+            <div class="overall_task ">
+
+        </div>
+    </section>
+
+    <footer class="h-[300px] bg-slate-500 w-[100%] mt-[500px]"></footer>
+
+    <script src="/js/popup_script.js"></script>
+    <script src="/js/completed_script.js"></script>
+    <script src="/js/inserting_script.js"></script>
+</body>
+
+</html>
