@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title{
+    @apply w-[50%] h-14 lg:ml-14 lg:w-[45%] sm:text-[32px] text-[23px] ml-1 md:m-5 font-semibold flex items-center;
+}
+.task_subhead{
+    @apply md:text-[20px] sm:text-lg text-[15px] flex items-center font-sans h-[60%] w-[100%] ;
+}
+.date{
+    @apply h-[30%]  w-[100%] sm:text-sm  md:text-lg text-xs font-medium;
+}
+.task_create_due{
+    @apply w-[50%] h-[70px] flex flex-col justify-center;
+}
+.task_button{
+    @apply h-[50px] w-[100%] flex justify-center items-center font-medium rounded-2xl hover:cursor-pointer;
+}
+.more_button{
+    @apply h-[30px] w-[80%] rounded-full bg-slate-200 flex justify-center items-center hover:cursor-pointer;
+}
+.task{
+    @apply w-[98%] sm:w-[90%] h-[150px] rounded-[40px] gap-1 flex justify-around p-7 mt-10 shadow-md bg-gradient-to-br from-[rgba(243,239,196,0.87)] to-[rgba(184,177,104,0.87)];
+}
+.Ftask{
+    @apply w-[98%] sm:w-[90%] h-[150px] rounded-[40px] gap-1 flex justify-around p-7 mt-10 shadow-md relative bg-[rgb(222,215,196,0.9)];
+}
+.finished_date{
+    @apply bg-red-400 text-[26px] font-mono h-10 absolute bottom-[-10px] left-0 w-full flex justify-center items-center;
+}
+.overall_task{
+    @apply p-4 w-[98%] flex flex-col sm:flex-row gap-1 items-center;
+}
+.input_desc{
+   @apply h-24 m-5 text-2xl w-[98%] rounded-3xl p-8 bg-[rgba(214,207,255,0.3)]
+}
+.input_date{
+    @apply h-24 md:text-2xl sm:w-[30%] w-[60%] rounded-3xl p-8 m-5 bg-[#e2fdff] text-xl;
+}
+.input_title{
+    @apply m-5 h-24 text-2xl w-[70%] rounded-3xl p-8 bg-[#ddeaff];
+}
+.main_heading{
+    @apply w-11/12 max-w-[1200px] h-[110px] text-center bg-[f8f8f8] text-6xl p-4 mb-16 font-mono mt-6;
+}
+.pop_up{
+    @apply h-[90vh] w-[95vw] max-w-[750px] bg-slate-400 rounded-3xl pt-9 pb-9 pl-6 pr-6 flex flex-col items-center gap-14 mt-24 ;
+}
+.pop_container{
+    @apply fixed top-0 left-0 z-10 backdrop-blur-md w-[100%] h-[100%] m-0;
+}
+.addbtn{
+    @apply m-4 h-14 w-44 rounded-3xl bg-teal-800 text-2xl font-sans font-semibold text-slate-50 flex justify-center items-center shadow-lg hover:cursor-pointer;
+}
